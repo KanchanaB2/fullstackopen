@@ -1,7 +1,7 @@
 
 
 // - Content component - 
-const Content1 = (props) => {
+const Content = (props) => {
   return(
     <>
       <p>
@@ -12,28 +12,6 @@ const Content1 = (props) => {
       </p>
       <p>
         {props.courseContects[2].part} {props.courseContects[2].exercises}
-      </p>
-    </>
-  )
-}
-
-// - Content component - 
-const Content = (props) => {
-  return(
-    <>
-      <Part cData={props.courseContects} cid={0}/>
-      <Part cData={props.courseContects} cid={1}/>
-      <Part cData={props.courseContects} cid={2}/>
-    </>
-  )
-}
-
-// - Part component - 
-const Part = (props) => {
-  return (
-    <>
-      <p>
-        {props.cData[props.cid].part} {props.cData[props.cid].exercises}
       </p>
     </>
   )
